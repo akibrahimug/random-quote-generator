@@ -84,6 +84,21 @@ const getRandomQuote = (quote) => {
 }
 
 /***
+ * `getRandomColor` function
+***/
+
+const getRandomColor = () => {
+  const r = Math.floor(Math.random() * 255 );
+  const g = Math.floor(Math.random() * 255 );
+  const b = Math.floor(Math.random() * 255 );
+
+  const rgb = `rgb(${r},${g},${b})`
+  return rgb
+}
+
+
+
+/***
  * `printQuote` function
 ***/
 const printQuote = () => {
@@ -97,7 +112,11 @@ const printQuote = () => {
   
   //Select the DOM elements to replace
   const quoteBox = document.getElementById('quote-box')
-  quoteBox.innerHTML = quote
+  quoteBox.innerHTML = quote;
+
+  //Background change with the quote change
+  const body = document.querySelector('body')
+  body.style.backgroundColor = getRandomColor()
 }
 
 
@@ -107,3 +126,4 @@ const printQuote = () => {
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
+
