@@ -15,37 +15,37 @@ const quotes = [
     quote: "Programming isn't about what you know; it's about what you can figure out.",
     source: 'Chris Pine',
     citation: 'Dev',
-    year: '',
+    year: '2010'
   },
   {
     quote: 'The only way to learn a new programming language is by writing programs in it.',
     source: ' Dennis Ritchie',
     citation: 'Dev',
-    year: '',
+    year: ''
   },
   {
     quote: "Sometimes it's better to leave something alone, to pause, and that's very true of programming.",
     source: 'Joyce Wheeler',
     citation: 'Dev',
-    year: '',
+    year: ''
   },
   {
     quote: 'In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them.',
     source: 'Andrew Hunt',
     citation: 'Dev',
-    year: '',
+    year: ''
   },
   {
     quote: 'Testing leads to failure, and failure leads to understanding.',
     source: 'Burt Rutan',
     citation: 'Dev',
-    year: '',
+    year: ''
   },
   {
     quote: 'The best error message is the one that never shows up.',
     source: 'Thomas Fuchs',
     citation: 'Dev',
-    year: '',
+    year: ''
   },
   {
     quote: "The most damaging phrase in the language is.. it's always been done this way",
@@ -57,19 +57,19 @@ const quotes = [
     quote: 'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.',
     source: 'Martin Fowler',
     citation: 'Dzone',
-    year: '',
+    year: ''
   },
   {
     quote: 'Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away',
     source: 'Antoine de Saint-Exupery',
     citation: 'Dzone',
-    year: '',
+    year: ''
   },
   {
     quote: 'I have always wished for my computer to be as easy to use as my telephone; my wish has come true because I can no longer figure out how to use my telephone.',
     source: ' Bjarne Stroustrup',
     citation: 'Tech Source',
-    year: '',
+    year: ''
   }
 ];
 
@@ -108,7 +108,7 @@ const printQuote = () => {
   const quote = `
   <p class="quote">${data.quote}</p>
   <p class="source">${data.source}
-  <span class="citation">${data.citation}</span></p>`
+  <span class="citation">${data.citation}</span><span class="year">${data.year}</span></p>`
   
   //Select the DOM elements to replace
   const quoteBox = document.getElementById('quote-box')
