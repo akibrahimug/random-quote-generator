@@ -111,7 +111,11 @@ const printQuote = () => {
   
   //Select the DOM elements to replace
   const quoteBox = document.getElementById('quote-box')
-  quoteBox.innerHTML = quote
+  quoteBox.innerHTML = quote;
+
+    //Background change with the quote change
+    const body = document.querySelector('body')
+    body.style.backgroundColor = getRandomColor() 
 }
 
 
