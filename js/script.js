@@ -130,6 +130,7 @@ const printQuote = () => {
     body.style.backgroundColor = getRandomColor() 
 }
 
+//Automatic quote and background rotation
 const timer = setInterval(() => {
   printQuote()
 }, 5000);
