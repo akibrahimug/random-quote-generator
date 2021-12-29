@@ -107,7 +107,7 @@ const printQuote = () => {
   const quote = `
   <p class="quote">${data.quote}</p>
   <p class="source">${data.source}
-  <span class="citation">${data.citation}</span></p>`
+  <span class="citation">${data.citation}</span><span class="year">${data.year}</span></p></p>`
   
   //Select the DOM elements to replace
   const quoteBox = document.getElementById('quote-box')
