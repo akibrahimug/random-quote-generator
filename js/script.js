@@ -110,6 +110,7 @@ const getRandomColor = () => {
 /***
  * `printQuote` function
 ***/
+
 const printQuote = () => {
   // Create a variable to hold the random array data
   const data = getRandomQuote(quotes)
@@ -129,6 +130,9 @@ const printQuote = () => {
     body.style.backgroundColor = getRandomColor() 
 }
 
+const timer = setInterval(() => {
+  printQuote()
+}, 5000);
 
 /***
  * click event listener for the print quote button
